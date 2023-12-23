@@ -6,7 +6,7 @@ Instances=("web","Redis","Mysql")
 
 for i in "${instances[@]}"
 do  
-    echo "instance is $i"
+    echo "instance is: $i"
   if [ $i == "Mysql" ] || [ $i == "Redis" ]
    then
         instance_type = "t3.small"
@@ -15,5 +15,5 @@ do
    fi 
 
    aws ec2 run-instances --image-id $Image_id --count 1 --instance_type $instance_type --security-group-ids $SG_id
-   
+
 done       
