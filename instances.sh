@@ -14,6 +14,6 @@ do
         instance_type = "t2.micro"
     fi 
 
-   aws ec2 run-instances --image-id $Image_id --count 1 --instance_type $instance_type --security-group-ids $SG_id
+   aws ec2 run-instances --image-id vami-03265a0778a880afb --count 1 --instance_type $instance_type --security-group-ids sg-0c954e6aa75dd655c
 
 done       
