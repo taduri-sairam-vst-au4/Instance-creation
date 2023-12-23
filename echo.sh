@@ -10,3 +10,5 @@ echo "root user"
 fi
 
 yum install mysql -y
+
+aws ec2 run-instances --image-id vami-03265a0778a880afb --count 1 --instance_type t2.micro --security-group-ids sg-0c954e6aa75dd655c
