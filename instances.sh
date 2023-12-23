@@ -2,7 +2,7 @@
 
 Images_id=ami-03265a0778a880afb
 SG_id=sg-0c954e6aa75dd655c
-Instances = ("web","Redis","Mysql")
+Instances=("web","Redis","Mysql")
 
 for i in "${instances[@]}"
 do
