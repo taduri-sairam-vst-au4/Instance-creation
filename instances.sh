@@ -13,5 +13,7 @@ do
      else
         instance_type = "t2.micro"
    fi 
-   aws ec2 run-instances --image-id $Image_id --count 1 --instance-type t2.micro --security-group-ids $SG_id
+
+   aws ec2 run-instances --image-id $Image_id --count 1 --instance_type $instance_type --security-group-ids $SG_id
+   
 done       
