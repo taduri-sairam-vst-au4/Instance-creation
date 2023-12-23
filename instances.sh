@@ -5,7 +5,8 @@ SG_id=sg-0c954e6aa75dd655c
 Instances=("web","Redis","Mysql")
 
 for i in "${instances[@]}"
-do
+do  
+    echo "instance is $i"
   if [ $i == "Mysql" ] || [ $i == "Redis" ]
    then
         instance_type = "t3.small"
